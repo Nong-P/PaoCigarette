@@ -1,13 +1,37 @@
 [gd_scene format=3 uid="uid://bnltbfdo4e5ve"]
 
+[ext_resource type="Texture2D" uid="uid://ci17rukgslw10" path="res://Pic/Windows-Black-Screen.png" id="1_m7jmp"]
 [ext_resource type="PackedScene" uid="uid://blab6265ptl7g" path="res://player.tscn" id="1_ulcgi"]
 [ext_resource type="Texture2D" uid="uid://5y3hr2v4mngs" path="res://Pic/ChatGPT Image Mar 10, 2026, 09_33_50 PM.png" id="2_nxogm"]
 [ext_resource type="Script" uid="uid://bb13o1wogamf6" path="res://player.gd" id="3_3253y"]
+[ext_resource type="Texture2D" uid="uid://br68bmhb4it8m" path="res://Pic/ChatGPT_Image_Mar_10__2026__10_34_29_PM-removebg-preview.png" id="4_u3cyc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y2354"]
+size = Vector2(123, 643)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3253y"]
 distance = -515.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m7jmp"]
+size = Vector2(114, 256)
+
 [node name="Node2D" type="Node2D" unique_id=2084247818]
+
+[node name="wall" type="StaticBody2D" parent="." unique_id=433913990]
+position = Vector2(14, 58)
+
+[node name="Sprite2D" type="Sprite2D" parent="wall" unique_id=1753249327]
+position = Vector2(1547.9999, 257)
+scale = Vector2(0.23444444, 1.2865613)
+texture = ExtResource("1_m7jmp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall" unique_id=1888470222]
+position = Vector2(-75, 266)
+shape = SubResource("RectangleShape2D_y2354")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="wall" unique_id=12706485]
+position = Vector2(1194, 265)
+shape = SubResource("RectangleShape2D_y2354")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1406478565]
 offset_right = 1536.0
@@ -21,10 +45,22 @@ position = Vector2(150, 393.99997)
 scale = Vector2(1.364091, 1.3543141)
 script = ExtResource("3_3253y")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1160741583]
+[node name="floor" type="StaticBody2D" parent="." unique_id=1160741583]
+position = Vector2(0, -2)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1087618462]
+[node name="Sprite2D" type="Sprite2D" parent="floor" unique_id=1087618462]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=824589171]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=824589171]
 position = Vector2(592, 0)
 shape = SubResource("WorldBoundaryShape2D_3253y")
+
+[node name="koomlee" type="StaticBody2D" parent="." unique_id=834974438]
+
+[node name="Sprite2D" type="Sprite2D" parent="koomlee" unique_id=1786268585]
+position = Vector2(976, 392)
+scale = Vector2(0.7124183, 0.6813725)
+texture = ExtResource("4_u3cyc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="koomlee" unique_id=1605402674]
+position = Vector2(977, 392)
+shape = SubResource("RectangleShape2D_m7jmp")

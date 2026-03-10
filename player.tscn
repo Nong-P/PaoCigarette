@@ -1,23 +1,37 @@
 [gd_scene format=3 uid="uid://blab6265ptl7g"]
 
-[ext_resource type="Texture2D" uid="uid://6xc65jj70pcn" path="res://Pic/Screenshot_2026-03-10_230142-removebg-preview.png" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://blbl5xhhflot4" path="res://Pic/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (1).png" id="1_4flbx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4flbx"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(0, 0, 2200, 2400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_4flbx")
-region = Rect2(0, 0, 72, 123)
+region = Rect2(2200, 0, 2200, 2400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
 atlas = ExtResource("1_4flbx")
-region = Rect2(72, 0, 72, 123)
+region = Rect2(4400, 0, 2200, 2400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(6600, 0, 2200, 2400)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hqtel"]
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_4flbx")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_onrkg")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_i3pqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqtel")
 }],
 "loop": true,
 "name": &"idle",
@@ -25,16 +39,17 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sweqy"]
-size = Vector2(91, 166)
+size = Vector2(124, 201)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=81413382]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=9585426]
-position = Vector2(2, 3)
+position = Vector2(26.000002, -1)
+scale = Vector2(0.10403167, 0.09561421)
 sprite_frames = SubResource("SpriteFrames_hqtel")
 animation = &"idle"
-frame_progress = 1.0
+frame_progress = 0.51387984
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=632268061]
-position = Vector2(-7.5, 6)
+position = Vector2(17, 16)
 shape = SubResource("RectangleShape2D_sweqy")
