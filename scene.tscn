@@ -1,11 +1,30 @@
 [gd_scene format=3 uid="uid://bnltbfdo4e5ve"]
 
 [ext_resource type="PackedScene" uid="uid://blab6265ptl7g" path="res://player.tscn" id="1_ulcgi"]
+[ext_resource type="Texture2D" uid="uid://5y3hr2v4mngs" path="res://Pic/ChatGPT Image Mar 10, 2026, 09_33_50 PM.png" id="2_nxogm"]
+[ext_resource type="Script" uid="uid://bb13o1wogamf6" path="res://player.gd" id="3_3253y"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3253y"]
+distance = -515.0
 
 [node name="Node2D" type="Node2D" unique_id=2084247818]
 
-[node name="CharacterBody2D" parent="." unique_id=81413382 instance=ExtResource("1_ulcgi")]
-position = Vector2(272, 154)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1406478565]
+offset_right = 1536.0
+offset_bottom = 1024.0
+scale = Vector2(0.748285, 0.6308796)
+texture = ExtResource("2_nxogm")
+metadata/_edit_lock_ = true
 
-[node name="CharacterBody2D2" parent="." unique_id=548878740 instance=ExtResource("1_ulcgi")]
-position = Vector2(272, 154)
+[node name="CharacterBody2D" parent="." unique_id=81413382 instance=ExtResource("1_ulcgi")]
+position = Vector2(150, 393.99997)
+scale = Vector2(1.364091, 1.3543141)
+script = ExtResource("3_3253y")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1160741583]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1087618462]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=824589171]
+position = Vector2(592, 0)
+shape = SubResource("WorldBoundaryShape2D_3253y")
