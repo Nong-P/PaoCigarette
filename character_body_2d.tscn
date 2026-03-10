@@ -42,8 +42,8 @@ motion_mode = 1
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1676413287]
 sprite_frames = SubResource("SpriteFrames_1kp85")
 animation = &"idle"
-frame_progress = 0.57640064
+frame_progress = 0.2968963
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=19346298]
-position = Vector2(0, 5)
+position = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_44cfe")
