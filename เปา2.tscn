@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://dx8jdxvow3g08"]
-
-[ext_resource type="PackedScene" uid="uid://dsucul0dlkgoc" path="res://character_body_2d.tscn" id="1_i2ns2"]
-
-[node name="CharacterBody2D" unique_id=118249179 instance=ExtResource("1_i2ns2")]
-
-[node name="AnimatedSprite2D" parent="." index="0" unique_id=1676413287]
-frame_progress = 0.14881915

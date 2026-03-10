@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bqawmbikf2lon"
+path="res://.godot/imported/WaterDrop.wav-bd8e18467b7fa10943d6d99a8229a6cc.sample"
+
+[deps]
+
+source_file="res://Pic/Ninja Adventure - Asset Pack/Audio/Sounds/Elemental/WaterDrop.wav"
+dest_files=["res://.godot/imported/WaterDrop.wav-bd8e18467b7fa10943d6d99a8229a6cc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

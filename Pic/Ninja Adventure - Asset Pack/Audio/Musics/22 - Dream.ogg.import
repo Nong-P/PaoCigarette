@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddpmwqdw2jam1"
+path="res://.godot/imported/22 - Dream.ogg-af4c8fb94bdb363ebce5c05a894c3ccc.oggvorbisstr"
+
+[deps]
+
+source_file="res://Pic/Ninja Adventure - Asset Pack/Audio/Musics/22 - Dream.ogg"
+dest_files=["res://.godot/imported/22 - Dream.ogg-af4c8fb94bdb363ebce5c05a894c3ccc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

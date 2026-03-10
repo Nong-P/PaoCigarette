@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://blab6265ptl7g"]
+
+[ext_resource type="Texture2D" uid="uid://ce4pgibn0vc3d" path="res://Pic/Individual Sprites/adventurer-attack1-00.png" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://02gv8i4d6a8k" path="res://Pic/Individual Sprites/adventurer-attack1-01.png" id="2_i3pqv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hqtel"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_onrkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_i3pqv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sweqy"]
+size = Vector2(20, 25)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=81413382]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=9585426]
+position = Vector2(2, 3)
+sprite_frames = SubResource("SpriteFrames_hqtel")
+autoplay = "default"
+frame_progress = 0.40771687
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=632268061]
+position = Vector2(1, 9)
+shape = SubResource("RectangleShape2D_sweqy")
