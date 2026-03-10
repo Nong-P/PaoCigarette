@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dsucul0dlkgoc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_186t8"]
+animations = []
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1128889544]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1666348082]
+position = Vector2(59, 97)
+scale = Vector2(148.27882, 6985.418)
+sprite_frames = SubResource("SpriteFrames_186t8")
+animation = &""
