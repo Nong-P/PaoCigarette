@@ -6,3 +6,6 @@
 
 [node name="CharacterBody2D" parent="." unique_id=81413382 instance=ExtResource("1_ulcgi")]
 position = Vector2(272, 154)
+
+[node name="CharacterBody2D2" parent="." unique_id=548878740 instance=ExtResource("1_ulcgi")]
+position = Vector2(272, 154)
